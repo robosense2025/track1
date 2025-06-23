@@ -179,7 +179,7 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
 ## 📄 Citation
 
-If you use this RoboSense Track 1 Driving with Language Dataset in your research, please cite:
+If you use the code and dataset in your research, please cite:
 
 ```bibtex
 @article{xie2025drivebench,
