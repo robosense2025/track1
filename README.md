@@ -22,9 +22,12 @@
 
 ## Challenge Overview
 
-**Track 1: Drive with Language** challenges participants to develop intelligent driving systems that can understand and act upon natural language instructions in dynamic driving environments. In an era where autonomous vehicles must interpret complex human commands, participants will design algorithms that bridge the gap between natural language understanding and driving actions. The challenge focuses on enabling autonomous agents to process commands involving perception, prediction, and planning. Submissions must address key challenges such as accurate scene perception, safe decision-making, and robustness against visual degradation in complex driving scenarios.
+**Track 1: Drive with Language** challenges participants to develop intelligent driving systems that can understand and act upon natural language instructions in dynamic driving environments. In an era where autonomous vehicles must interpret complex human commands, participants will design algorithms that bridge the gap between natural language understanding and driving actions. 
 
-### 🎯 Challenge Objectives
+The challenge focuses on enabling autonomous agents to process commands involving perception, prediction, and planning. Submissions must address key challenges such as accurate scene perception, safe decision-making, and robustness against visual degradation in complex driving scenarios.
+
+
+### 🎯 Objectives
 
 This track evaluates the capability of VLMs to answer high-level driving questions in complex urban environments. Given questions including perception, prediction, and planning, and a multi-view camera input, participants are expected to answer the question given the visually corrupted images.
 
@@ -33,40 +36,49 @@ This track evaluates the capability of VLMs to answer high-level driving questio
 - **Planning**: Plan the safe driving actions based on the objects in the scene.
 
 
-## 🏆 Competition Details
+## Competition Details
 
-- **Venue**: IROS 2025, Hangzhou, China (Oct 19-25, 2025)
+- **Venue**: IROS 2025, Hangzhou (Oct 19-25, 2025)
 - **Registration**: [Google Form](https://forms.gle/robosense2025)
 - **Contact**: robosense2025@gmail.com
-- **Awards**: 
-  - 🥇 1st Place: $1,000 + Certificate
-  - 🥈 2nd Place: $600 + Certificate  
-  - 🥉 3rd Place: $400 + Certificate
-  - 🌟 Innovation Award: Certificate
+
+
+### 🏆 **Awards**
+
+| Prize | Award |
+|:-|:-|
+| 🥇 1st Place | $1000 + Certificate |
+| 🥈 2nd Place | $600 + Certificate |
+| 🥉 3rd Place | $400 + Certificate |
+| 🌟 Innovation Award | Cash Award + Certificate |
+| Participation | Certificate |
+
 
 ## 📊 Official Dataset
 
-This track uses the **RoboSense Track 1 Drive with Language Dataset**, which is based on the **DriveLM and DriveBencht** benchmark that includes:
+This track uses the **RoboSense Track 1 Drive with Language Dataset**, which is based on the **DriveLM and DriveBench** benchmarks that includes:
 
-- **Multi-view Camera Input**: The input is a multi-view camera input from nuScenes dataset.
+- **Multi-view Camera Input**: The input is a multi-view camera input from the nuScenes dataset.
 - **Language Instruction**: The instruction is a natural language instruction, including perception, prediction, and planning.
-- **Object Localization**: The object is referred by the center point of the object in the scene.
+- **Object Localization**: The object is referred to by the center point of the object in the scene.
+
 
 ### Dataset Statistics
 
 | Driving Tasks | Num. of Questions | Question Types                   |
 |:-|:-|:-|
-| **Perception** | 361            | MCQs, VQA |
-| **Prediction** | 522            | MCQs |
-| **Planning** | 513            | VQA |
+| **Perception** | 361 | MCQs, VQA |
+| **Prediction** | 522 | MCQs |
+| **Planning** | 513 | VQA |
 
 We further distinguish the VQA questions into two types:
 - VQA<sub>obj</sub>: The question is about the object in the scene.
 - VQA<sub>scene</sub>: The question is about the general scene.
 
+
 ### Baseline Performance (Phase 1)
 
-We use the [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) as the baseline model. The baseline performance is as follows:
+We use [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) as the baseline model. The baseline performance is as follows:
 
 | Task | Question Type | Accuracy (%) |
 |:-|:-|:-|
@@ -161,13 +173,13 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 ## 📧 Contact & Support
 
 - **Email**: robosense2025@gmail.com
-- **Challenge Website**: https://robosense2025.github.io/
+- **Official Website**: https://robosense2025.github.io
 - **Issues**: Please use GitHub Issues for technical questions
 
 
 ## 📄 Citation
 
-If you use this RoboSense Track 1 Drive with Language Dataset, please cite:
+If you use this RoboSense Track 1 Driving with Language Dataset in your research, please cite:
 
 ```bibtex
 @article{xie2025vlms,
@@ -188,15 +200,30 @@ If you use this RoboSense Track 1 Drive with Language Dataset, please cite:
 }
 ```
 
-## 🙏 Acknowledgements
 
-- **RoboSense Challenge Organizers** for hosting this competition
+## Acknowledgements
+
+**RoboSense 2025 Challenge Organizers**
+
+<p align="center">
+  <img src="docs/figures/organizers.jpg" align="center" width="99%">
+</p>
+
+
+**RoboSense 2025 Program Committee**
+
+<p align="center">
+  <img src="docs/figures/organizers2.jpg" align="center" width="99%">
+</p>
+
+
+
 
 ---
 
 <div align="center">
 
-**🤖 Ready to navigate safely in the crowd? Register now and compete for $2,000!**
+**🤖 Ready to sense the world robustly? Register now and compete for $2,000!**
 
 [**📝 Register Here**](https://forms.gle/robosense2025) | [**🌐 Challenge Website**](https://robosense2025.github.io/) | [**📧 Contact Us**](mailto:robosense2025@gmail.com)
 
