@@ -1,0 +1,4 @@
+vllm
+PyQt5>=5.15.0
+nuscenes-devkit>=1.1.9
+Pillow>=8.0.0 
