@@ -1,7 +1,5 @@
 # 🤖 RoboSense Track 1: Driving with Language
 
-
-
 <div align="center">
 
 **Official Baseline Implementation for Track 1**
@@ -18,7 +16,11 @@
 
 </div>
 
-## 📢 Challenge Overview
+## Challenge Overview
+
+<p align="center">
+  <img src="docs/figures/track1.jpg" align="center" width="60%">
+</p>
 
 **Track 1: Drive with Language** challenges participants to develop intelligent driving systems that can understand and act upon natural language instructions in dynamic driving environments. In an era where autonomous vehicles must interpret complex human commands, participants will design algorithms that bridge the gap between natural language understanding and driving actions. The challenge focuses on enabling autonomous agents to process commands involving perception, prediction, and planning. Submissions must address key challenges such as accurate scene perception, safe decision-making, and robust against visual degradation in complex driving scenarios.
 
