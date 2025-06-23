@@ -39,7 +39,7 @@ This track evaluates the capability of VLMs to answer high-level driving questio
 ## Competition Details
 
 - **Venue**: IROS 2025, Hangzhou (Oct 19-25, 2025)
-- **Registration**: [Google Form](https://forms.gle/robosense2025)
+- **Registration**: [Google Form](https://forms.gle/robosense2025) (Open until Aug 15)
 - **Contact**: robosense2025@gmail.com
 
 
@@ -182,40 +182,40 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 If you use this RoboSense Track 1 Driving with Language Dataset in your research, please cite:
 
 ```bibtex
-@article{xie2025vlms,
-  title={Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
-  author={Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
-  journal={arXiv preprint arXiv:2501.04003},
-  year={2025}
+@article{xie2025drivebench,
+  title = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
+  author = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
+  journal = {arXiv preprint arXiv:2501.04003},
+  year = {2025}
 }
 ```
 ```bibtex
 @inproceedings{sima2024drivelm,
-  title={DriveLM: Driving with graph visual question answering},
-  author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Bei{\ss}wenger, Jens and Luo, Ping and Geiger, Andreas and Li, Hongyang},
-  booktitle={European Conference on Computer Vision},
-  pages={256--274},
-  year={2024},
-  organization={Springer}
+  title = {DriveLM: Driving with graph visual question answering},
+  author = {Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Bei{\ss}wenger, Jens and Luo, Ping and Geiger, Andreas and Li, Hongyang},
+  booktitle = {European Conference on Computer Vision},
+  pages = {256-274},
+  year = {2024},
+  organization = {Springer}
 }
 ```
 
 
+
 ## Acknowledgements
 
-**RoboSense 2025 Challenge Organizers**
+### RoboSense 2025 Challenge Organizers
 
 <p align="center">
   <img src="docs/figures/organizers.jpg" align="center" width="99%">
 </p>
 
 
-**RoboSense 2025 Program Committee**
+### RoboSense 2025 Program Committee
 
 <p align="center">
   <img src="docs/figures/organizers2.jpg" align="center" width="99%">
 </p>
-
 
 
 
