@@ -147,9 +147,9 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
 - **Challenge Website**: [robosense2025.github.io](https://robosense2025.github.io/)
 - **Track Details**: [Track 1 Page](https://robosense2025.github.io/track1)
-- **Track Dataset**: [HuggingFace Dataset]()
-- **Baseline Paper**: [arXiv:2409.13244](https://arxiv.org/abs/2501.04003)
-- **Baseline Model**: [Google Drive](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
+- **Track Dataset**: [HuggingFace Dataset](https://huggingface.co/datasets/robosense/datasets/tree/main/track1-driving-with-language)
+- **Baseline Model**: [HuggingFace Dataset](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
+- **Related Paper**: [arXiv:2409.13244](https://arxiv.org/abs/2501.04003)
 
 ## 📧 Contact & Support
 
