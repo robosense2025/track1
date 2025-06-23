@@ -1,15 +1,17 @@
 # 🤖 RoboSense Track 1: Driving with Language
 
+
+
 <div align="center">
 
-**Official Baseline Implementation for Social Navigation**
+**Official Baseline Implementation for Track 1**
 
-*Based on DriveBench -- "An Empirical Study from the Reliability, Data, and Metric Perspectives" (https://github.com/drive-bench/toolkit)*
+*Based on DriveBench -- "An Empirical Study from the Reliability, Data, and Metric Perspectives"*<br>(https://github.com/drive-bench/toolkit)
 
 [![RoboSense Challenge](https://img.shields.io/badge/RoboSense-2025-blue)](https://robosense2025.github.io/)
 [![Track](https://img.shields.io/badge/Track-Drive%20with%20Language-green)](https://robosense2025.github.io/track1)
 [![IROS 2025](https://img.shields.io/badge/IROS-2025-red)](https://iros2025.org/)
-[![EvalAI](https://img.shields.io/badge/EvalAI-Submit-purple)](https://eval.ai/web/challenges/challenge-page/2025)
+[![EvalAI](https://img.shields.io/badge/CodaBench-Submit-purple)](https://www.codabench.org/competitions/9285/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](LICENSE)
 
 **🏆 Prize Pool: $2,000 USD for Track 1 Winners**
@@ -50,8 +52,8 @@ This track uses the **RoboSense Track 1 Drive with Language Dataset**, which is 
 
 ### Dataset Statistics
 
-| Driving Tasks         | Num. of Questions | Question Types                   |
-|----------------|----------------|-------------------------------|
+| Driving Tasks | Num. of Questions | Question Types                   |
+|:-|:-|:-|
 | **Perception** | 361            | MCQs, VQA |
 | **Prediction** | 522            | MCQs |
 | **Planning** | 513            | VQA |
@@ -60,12 +62,12 @@ We further distinguish the VQA questions into two types:
 - VQA<sub>obj</sub>: The question is about the object in the scene.
 - VQA<sub>scene</sub>: The question is about the general scene.
 
-### Baseline Performance (Phase I)
+### Baseline Performance (Phase 1)
 
 We use the [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) as the baseline model. The baseline performance is as follows:
 
 | Task | Question Type | Accuracy (%) |
-|:---:|:---:|:---:|
+|:-|:-|:-|
 | **Perception** | MCQ | 75.5 |
 | | VQA<sub>obj</sub> | 29.2 |
 | | VQA<sub>scene</sub> | 22.2 |
@@ -87,7 +89,7 @@ pip install -r requirements.txt
 ```
 
 ### 2. **Prepare the dataset**
-First convert the data format by running:
+First, convert the data format by running:
 
 ```bash
 python convert_format.py <input_file> <output_file> 
@@ -97,7 +99,7 @@ You can also include temporal frames by adding the `--use-temporal` flag with `-
 
 ### 3. **Deploy**
 
-We deploy the model using vllm:
+We deploy the model using vLLM:
 
 ```bash
 bash service.sh <GPU_NUM>
@@ -122,8 +124,8 @@ TBA
 ## 🎖️ Challenge Participation
 
 ### Submission Requirements
-1. **Phase I**: Submit results on clean test set with reproducible code
-2. **Phase II**: Submit results on corrupted test set with reproducible code
+1. **Phase 1**: Submit results on clean test set with reproducible code
+2. **Phase 2**: Submit results on corrupted test set with reproducible code
 3. **Code**: Submit reproducible code with your final results
 4. **Model**: Include trained model weights
 5. **Report**: Technical report describing your approach
@@ -132,16 +134,18 @@ TBA
 
 Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
-| Metric      | Description |
-|-------------|-------------|
-| **Accuracy**       | Used for all Multi-Choice Questions (MCQs) |
+| Metric | Description |
+|:-|:-|
+| **Accuracy** | Used for all Multi-Choice Questions (MCQs) |
 | **LLM Score** | Used for all Visual Question Answering (VQA), we prompt an LLM to score the answer given detailed rubrics. |
+
 
 ### Timeline
 - **Registration**: [Google Form](https://forms.gle/robosense2025)
-- **Phase I Deadline**: TBA
-- **Phase II Deadline**: TBA
+- **Phase 1 Deadline**: August 15th
+- **Phase 2 Deadline**: September 15th
 - **Awards Announcement**: IROS 2025
+
 
 ## 🔗 Resources
 
@@ -151,11 +155,13 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 - **Baseline Model**: [HuggingFace Dataset](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
 - **Related Paper**: [arXiv:2409.13244](https://arxiv.org/abs/2501.04003)
 
+
 ## 📧 Contact & Support
 
 - **Email**: robosense2025@gmail.com
 - **Challenge Website**: https://robosense2025.github.io/
 - **Issues**: Please use GitHub Issues for technical questions
+
 
 ## 📄 Citation
 
@@ -168,9 +174,10 @@ If you use this RoboSense Track 1 Drive with Language Dataset, please cite:
   journal={arXiv preprint arXiv:2501.04003},
   year={2025}
 }
-
+```
+```bibtex
 @inproceedings{sima2024drivelm,
-  title={Drivelm: Driving with graph visual question answering},
+  title={DriveLM: Driving with graph visual question answering},
   author={Sima, Chonghao and Renz, Katrin and Chitta, Kashyap and Chen, Li and Zhang, Hanxue and Xie, Chengen and Bei{\ss}wenger, Jens and Luo, Ping and Geiger, Andreas and Li, Hongyang},
   booktitle={European Conference on Computer Vision},
   pages={256--274},
