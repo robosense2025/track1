@@ -39,7 +39,7 @@ This track evaluates the capability of VLMs to answer high-level driving questio
 ## Competition Details
 
 - **Venue**: IROS 2025, Hangzhou (Oct 19-25, 2025)
-- **Registration**: [Google Form](https://forms.gle/robosense2025) (Open until Aug 15)
+- **Registration**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdwfvk-NHdQh9-REiBLCjHMcyLT-sPCOCzJU-ux5jbcZLTkBg/viewform) (Open until Aug 15)
 - **Contact**: robosense2025@gmail.com
 
 
@@ -225,7 +225,7 @@ If you use the code and dataset in your research, please cite:
 
 **🤖 Ready to sense the world robustly? Register now and compete for $2,000!**
 
-[**📝 Register Here**](https://forms.gle/robosense2025) | [**🌐 Challenge Website**](https://robosense2025.github.io/) | [**📧 Contact Us**](mailto:robosense2025@gmail.com)
+[**📝 Register Here**](https://docs.google.com/forms/d/e/1FAIpQLSdwfvk-NHdQh9-REiBLCjHMcyLT-sPCOCzJU-ux5jbcZLTkBg/viewform) | [**🌐 Challenge Website**](https://robosense2025.github.io/) | [**📧 Contact Us**](mailto:robosense2025@gmail.com)
 
 Made with ❤️ by the RoboSense 2025 Team
 
