@@ -9,7 +9,7 @@
 [![RoboSense Challenge](https://img.shields.io/badge/RoboSense-2025-blue)](https://robosense2025.github.io/)
 [![Track](https://img.shields.io/badge/Track-Drive%20with%20Language-green)](https://robosense2025.github.io/track1)
 [![IROS 2025](https://img.shields.io/badge/IROS-2025-red)](https://iros2025.org/)
-[![EvalAI](https://img.shields.io/badge/CodaBench-Submit-purple)](https://www.codabench.org/competitions/9285/)
+[![CodaBench](https://img.shields.io/badge/CodaBench-Submit-purple)](https://www.codabench.org/competitions/9285/)
 [![License](https://img.shields.io/badge/License-Apache%202.0-yellow)](LICENSE)
 
 **🏆 Prize Pool: $2,000 USD for Track 1 Winners**
@@ -119,7 +119,7 @@ We deploy the model using vLLM:
 bash service.sh <GPU_NUM>
 ```
 
-### 4. Evaluation Baseline
+### 4. Evaluate the baseline
 
 Simply run:
 
@@ -127,13 +127,15 @@ Simply run:
 bash inference.sh
 ```
 
-#### 📦 Submission Packaging
+### 📦 Submission Packaging
 
 TBA
 
-#### ⏱ Evaluation Time
+### ⏱ Evaluation Time
 
 TBA
+
+
 
 ## 🎖️ Challenge Participation
 
@@ -155,7 +157,7 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
 
 ### Timeline
-- **Registration**: [Google Form](https://forms.gle/robosense2025)
+- **Registration**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdwfvk-NHdQh9-REiBLCjHMcyLT-sPCOCzJU-ux5jbcZLTkBg/viewform)
 - **Phase 1 Deadline**: August 15th
 - **Phase 2 Deadline**: September 15th
 - **Awards Announcement**: IROS 2025
@@ -167,7 +169,7 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 - **Track Details**: [Track 1 Page](https://robosense2025.github.io/track1)
 - **Track Dataset**: [HuggingFace Dataset](https://huggingface.co/datasets/robosense/datasets/tree/main/track1-driving-with-language)
 - **Baseline Model**: [HuggingFace Dataset](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct)
-- **Related Paper**: [arXiv:2409.13244](https://arxiv.org/abs/2501.04003)
+- **Related Paper**: [arXiv:2501.04003](https://arxiv.org/abs/2501.04003)
 
 
 ## 📧 Contact & Support
