@@ -71,8 +71,8 @@ We use the [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-
 | | VQA<sub>scene</sub> | 22.2 |
 | **Prediction** | MCQ | 59.2|
 | **Planning** | VQA<sub>obj</sub> | 29.6 |
-| **Planning** | VQA<sub>scene</sub> | 31.2 |
-| **Average** | All Types | 42.5 |
+| | VQA<sub>scene</sub> | 31.2 |
+| **Average** | All Types | **42.5** |
 
 ## 🚀 Quick Start
 
