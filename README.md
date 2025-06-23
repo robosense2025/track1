@@ -14,24 +14,24 @@
 
 **🏆 Prize Pool: $2,000 USD for Track 1 Winners**
 
-</div>
-
-## Challenge Overview
-
 <p align="center">
   <img src="docs/figures/track1.jpg" align="center" width="60%">
 </p>
 
-**Track 1: Drive with Language** challenges participants to develop intelligent driving systems that can understand and act upon natural language instructions in dynamic driving environments. In an era where autonomous vehicles must interpret complex human commands, participants will design algorithms that bridge the gap between natural language understanding and driving actions. The challenge focuses on enabling autonomous agents to process commands involving perception, prediction, and planning. Submissions must address key challenges such as accurate scene perception, safe decision-making, and robust against visual degradation in complex driving scenarios.
+</div>
+
+## Challenge Overview
+
+**Track 1: Drive with Language** challenges participants to develop intelligent driving systems that can understand and act upon natural language instructions in dynamic driving environments. In an era where autonomous vehicles must interpret complex human commands, participants will design algorithms that bridge the gap between natural language understanding and driving actions. The challenge focuses on enabling autonomous agents to process commands involving perception, prediction, and planning. Submissions must address key challenges such as accurate scene perception, safe decision-making, and robustness against visual degradation in complex driving scenarios.
 
 ### 🎯 Challenge Objectives
 
-This track evaluates the capability of VLMs to answer high-level driving questions in complex urban environments. Given question including perception, prediction, and planning, and a multi-view camera input, participants are expected to answer the question given the visual corrupted images.
-
+This track evaluates the capability of VLMs to answer high-level driving questions in complex urban environments. Given questions including perception, prediction, and planning, and a multi-view camera input, participants are expected to answer the question given the visually corrupted images.
 
 - **Perception**: Understand the scene and answer the question about the scene or objects in the scene.
 - **Prediction**: Predict the future trajectory of objects in the scene.
 - **Planning**: Plan the safe driving actions based on the objects in the scene.
+
 
 ## 🏆 Competition Details
 
