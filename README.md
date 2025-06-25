@@ -162,6 +162,16 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 - **Phase 2 Deadline**: September 15th
 - **Awards Announcement**: IROS 2025
 
+## 📚 FAQ
+
+> 1. What VLMs can we use?
+
+The participants can use any VLMs that are **open-sourced**. Therefore, `GPT-4o`, `Claude 3.5 Sonnet`, `Gemini 2.0 Pro`, etc. are not allowed.
+
+> 2. What should I submit for reproducibility?
+
+Submit the code if you are using existing open-sourced VLMs. Additionally, submit weights if you perform finetuning.
+
 
 ## 🔗 Resources
 
