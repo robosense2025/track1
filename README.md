@@ -162,7 +162,7 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 - **Phase 2 Deadline**: September 15th
 - **Awards Announcement**: IROS 2025
 
-## 📚 FAQ
+## 📚 FAQs
 
 > 1. What VLMs can we use?
 
