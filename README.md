@@ -109,7 +109,7 @@ First, convert the data format by running:
 python convert_format.py <input_file> <output_file> 
 ```
 
-You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`.
+You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. This steps requires the prepration of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will uploaded the subset of the nuScenes dataset in the future for convenience.
 
 ### 3. **Deploy**
 
