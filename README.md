@@ -109,7 +109,7 @@ First, convert the data format by running:
 python convert_format.py <input_file> <output_file> 
 ```
 
-You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. This steps requires the prepration of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will uploaded the subset of the nuScenes dataset in the future for convenience.
+You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. This steps requires the prepration of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will upload the subset of the nuScenes dataset in the future for convenience.
 
 ### 3. **Deploy**
 
@@ -129,11 +129,35 @@ bash inference.sh
 
 ### 📦 Submission Packaging
 
-TBA
+The format should be the same as the **converted** format in Step 2, withthe  filled `answer` field as shown below:
+```json
+[
+  {
+    "scene_token": "xxx",
+    "frame_token": "xxx",
+    "question": "What are the important objects in the current scene? Those objects will be considered for the future reasoning and driving decision.",
+    "answer": "LLM Prediction here.",
+    "category": "perception",
+    "img_paths": {
+      "CAM_FRONT": "data/nuscenes/samples/CAM_FRONT/n008-2018-09-18-14-35-12-0400__CAM_FRONT__1537295827412404.jpg",
+      "CAM_FRONT_RIGHT": "data/nuscenes/samples/CAM_FRONT_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_RIGHT__1537295827420482.jpg",
+      "CAM_FRONT_LEFT": "data/nuscenes/samples/CAM_FRONT_LEFT/n008-2018-09-18-14-35-12-0400__CAM_FRONT_LEFT__1537295827404799.jpg",
+      "CAM_BACK": "data/nuscenes/samples/CAM_BACK/n008-2018-09-18-14-35-12-0400__CAM_BACK__1537295827437558.jpg",
+      "CAM_BACK_RIGHT": "data/nuscenes/samples/CAM_BACK_RIGHT/n008-2018-09-18-14-35-12-0400__CAM_BACK_RIGHT__1537295827428113.jpg",
+      "CAM_BACK_LEFT": "data/nuscenes/samples/CAM_BACK_LEFT/n008-2018-09-18-14-35-12-0400__CAM_BACK_LEFT__1537295827447405.jpg"
+    }
+  },
+  {
+    "scene_token": "xxx",
+    "frame_token": "xxx",
+    ...
+```
+
+The prediction file MUST be **`results.json`**. Then zip the file for submission.
 
 ### ⏱ Evaluation Time
 
-TBA
+It takes around 5️⃣ minutes to finish the evaluation.
 
 
 
