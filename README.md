@@ -109,7 +109,7 @@ First, convert the data format by running:
 python convert_format.py <input_file> <output_file> 
 ```
 
-You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. This steps requires the prepration of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will upload the subset of the nuScenes dataset in the future for convenience.
+The `input_file` can be downloaded from our [HuggingFace](https://huggingface.co/datasets/robosense/datasets/tree/main/track1-driving-with-language) page. You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. The `convert_format.py` script requires the preparation of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will upload the subset of the nuScenes dataset in the future for convenience.
 
 ### 3. **Deploy**
 
