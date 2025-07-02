@@ -191,11 +191,15 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
 > 1. What VLMs can we use?
 
-The participants can use any VLMs that are **open-sourced**. Therefore, `GPT-4o`, `Claude 3.5 Sonnet`, `Gemini 2.0 Pro`, etc. are not allowed.
+The participants can use any VLMs that are **open-sourced**. Therefore, `GPT-4o`, `Claude 3.5 Sonnet`, `Gemini 2.0 Pro`, etc., are not allowed.
 
 > 2. What should I submit for reproducibility?
 
-Submit the code if you are using existing open-sourced VLMs. Additionally, submit weights if you perform finetuning.
+Submit the code if you are using existing open-sourced VLMs. Additionally, submit weights if you perform fine-tuning.
+
+> 3. Why are the evaluation results different using the same prediction file?
+
+We use LLM to evaluate open-ended questions. The MCQs result should the exactly the same, while open-ended questions might vary within a small numerical range.
 
 
 ## 🔗 Resources
