@@ -129,6 +129,12 @@ Simply run:
 bash inference.sh
 ```
 
+We also provide a UI to visualize the generated results to facilitate the development process:
+
+```bash
+python visual.py <result_file>
+```
+
 ### 📦 Submission Packaging
 
 The format should be the same as the **converted** format in Step 2, with the  filled `answer` field as shown below:
