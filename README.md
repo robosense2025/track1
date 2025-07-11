@@ -186,6 +186,9 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 | **Accuracy** | Used for all Multi-Choice Questions (MCQs) |
 | **LLM Score** | Used for all Visual Question Answering (VQA), we prompt an LLM to score the answer given detailed rubrics. |
 
+The overall score is computed as a weighted sum across question types. For the final ranking, we calculate the final score as:
+
+$$\text{Final Score} = 0.2 \times \text{Score}{\text{Phase 1}} + 0.8 \times \text{Score}{\text{Phase 2}}$$
 
 ### Timeline
 - **Registration**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdwfvk-NHdQh9-REiBLCjHMcyLT-sPCOCzJU-ux5jbcZLTkBg/viewform)
@@ -201,11 +204,24 @@ The participants can use any VLMs that are **open-sourced**. Therefore, `GPT-4o`
 
 > 2. What should I submit for reproducibility?
 
-Submit the code if you are using existing open-sourced VLMs. Additionally, submit weights if you perform fine-tuning.
+If using an existing open-source VLM, please submit your code. If you have performed any fine-tuning, you must also submit the trained weights. Additionally, we **strongly recommend** including:
+
+- A README file explaining setup and usage
+- An inference script to demonstrate how predictions are generated
+
+Submissions that cannot be reproduced on our end will be considered invalid.
 
 > 3. Why are the evaluation results different using the same prediction file?
 
-We use LLM to evaluate open-ended questions. The MCQs result should the exactly the same, while open-ended questions might vary within a small numerical range.
+We use LLM to evaluate open-ended questions. The MCQs result should the the same, while open-ended questions might vary within a small numerical range.
+
+> 4. Can we modify the prompt?
+
+Yes, you are free to modify the prompts. This includes techniques such as prompt engineering, retrieval-augmented generation (RAG), and in-context learning. However, to ensure correct evaluation, please **DO NOT** alter the `question` field in your submission JSON file.
+
+> 5. Can we use external models?
+
+No. This competition is intended to evaluate the capabilities of VLMs specifically. The use of task-specific models (e.g., object detectors, trajectory predictors) that directly address the task or provide extra information to the VLMs is not allowed.
 
 
 ## 🔗 Resources
