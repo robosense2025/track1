@@ -186,7 +186,7 @@ Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 | **Accuracy** | Used for all Multi-Choice Questions (MCQs) |
 | **LLM Score** | Used for all Visual Question Answering (VQA), we prompt an LLM to score the answer given detailed rubrics. |
 
-The overall score is computed as a weighted sum across question types. For the final ranking, we calculate the final score as:
+The overall score is computed as a weighted sum across question types, based on the number of questions in each type. For the final ranking, we calculate the final score as:
 
 $$\text{Final Score} = 0.2 \times \text{Score}{\text{Phase 1}} + 0.8 \times \text{Score}{\text{Phase 2}}$$
 
