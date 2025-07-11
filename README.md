@@ -206,8 +206,8 @@ The participants can use any VLMs that are **open-sourced**. Therefore, `GPT-4o`
 
 If using an existing open-source VLM, please submit your code. If you have performed any fine-tuning, you must also submit the trained weights. Additionally, we **strongly recommend** including:
 
-- A README file explaining setup and usage
-- An inference script to demonstrate how predictions are generated
+- A README file explaining environment setup and usage
+- An inference script to directly launch for reproduction
 
 Submissions that cannot be reproduced on our end will be considered invalid.
 
