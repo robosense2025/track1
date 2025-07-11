@@ -221,7 +221,7 @@ Yes, you are free to modify the prompts. This includes techniques such as prompt
 
 > 5. Can we use external models?
 
-No. This competition is intended to evaluate the capabilities of VLMs specifically. The use of task-specific models (e.g., object detectors, trajectory predictors) that directly address the task or provide extra information to the VLMs is not allowed.
+No. This competition is intended to evaluate the **capabilities of VLMs** specifically. The use of task-specific models (e.g., object detectors, trajectory predictors) that directly address the task or provide extra information to the VLMs is **NOT** allowed. Modification within the VLM architectures is allowed, such as the vision encoder.
 
 
 ## 🔗 Resources
