@@ -246,11 +246,11 @@ No. This competition is intended to evaluate the **capabilities of VLMs** specif
 If you use the code and dataset in your research, please cite:
 
 ```bibtex
-@article{xie2025drivebench,
-  title = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
-  author = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
-  journal = {arXiv preprint arXiv:2501.04003},
-  year = {2025}
+@inproceedings{xie2025drivebench,
+  author  = {Xie, Shaoyuan and Kong, Lingdong and Dong, Yuhao and Sima, Chonghao and Zhang, Wenwei and Chen, Qi Alfred and Liu, Ziwei and Pan, Liang},
+  title   = {Are VLMs Ready for Autonomous Driving? An Empirical Study from the Reliability, Data, and Metric Perspectives},
+  journal = {Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year    = {2025},
 }
 ```
 ```bibtex
