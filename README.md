@@ -182,20 +182,81 @@ It takes around 5️⃣ minutes to finish the evaluation.
 
 Our benchmark uses the following metrics: **Accuracy** and **LLM Score**.
 
-| Metric | Description |
-|:-|:-|
-| **Accuracy** | Used for all Multi-Choice Questions (MCQs) |
-| **LLM Score** | Used for all Visual Question Answering (VQA), we prompt an LLM to score the answer given detailed rubrics. |
+## Phase 1 Metrics
 
-The overall score is computed as a weighted sum across question types, based on the number of questions in each type. For the final ranking, we calculate the final score as:
+We use accuracy for MCQs and LLM score for open-ended questions (i.e., VQAs). The final score is weighted by the number of questions in each category.
 
-$$\text{Final Score} = 0.2 \times \text{Score}{\text{Phase 1}} + 0.8 \times \text{Score}{\text{Phase 2}}$$
+The Phase 1 score is calculated as follows:
+
+$$
+\text{Phase1\_Score} = \frac{N_{\text{MCQ}} \times \text{Accuracy}_{\text{MCQ}} + N_{\text{VQA}} \times \text{LLMScore}_{\text{VQA}}}{N_{\text{MCQ}} + N_{\text{VQA}}}
+$$
+
+where:
+- $ N_{\text{MCQ}} $ is the number of multiple-choice questions,
+- $ N_{\text{VQA}} $ is the number of open-ended questions,
+- $ \text{Accuracy}_{\text{MCQ}} $ is the accuracy on MCQs,
+- $ \text{LLMScore}_{\text{VQA}} $ is the average LLM score on open-ended questions.
+
+## Phase 2 Metrics
+
+To ensure accurate evaluation, we still use accuracy for MCQs. But for open-ended questions, we use a combination of the following metrics:
+
+- ROUGE-L: 10%
+- METEOR: 10%
+- LLM Score: 80%
+
+The final score is calculated as follows:
+
+$$
+\text{Phase2\_Score} = \frac{N_{\text{MCQ}} \times \text{Accuracy}_{\text{MCQ}} + N_{\text{VQA}} \times (0.1 \times \text{ROUGE-L}_{\text{VQA}} + 0.1 \times \text{METEOR}_{\text{VQA}} + 0.8 \times \text{LLMScore}_{\text{VQA}})}{N_{\text{MCQ}} + N_{\text{VQA}}}
+$$
+
+The final score is calculated as follows:
+
+$$
+\text{Final\_Score} = 0.2 \times \text{Phase1\_Score} + 0.8 \times \text{Phase2\_Score}
+$$
 
 ### Timeline
+
+All the timeline are in **Anywhere on Earth (AoE)** time.
+
 - **Registration**: [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdwfvk-NHdQh9-REiBLCjHMcyLT-sPCOCzJU-ux5jbcZLTkBg/viewform)
 - **Phase 1 Deadline**: August 15th
 - **Phase 2 Deadline**: September 15th
 - **Awards Announcement**: IROS 2025
+
+To ensure fairness and reproducibility, all participants are required to open-source their codebase and provide complete, accurate instructions for reproducing the reported results. If the submitted results cannot be reproduced, or if the codebase is incomplete or improperly prepared, the organizing team reserves the right to invalidate those results. Participants are encouraged to cross-verify the results of other teams.
+
+#### Phase 1 Results Finalization (Deadline: August 22nd, 2025)
+
+- Select and show the final and reproducible Phase 1 results to the CodaBench leaderboard
+- These results will be used for final ranking and help all participants to better plan for phase 2 based on the phase 1 results.
+- **Results will be considered VALID if:**
+  - The results are reproducible.
+  - The results are added to the CodaBench leaderboard. Better results that are intentionally **hidden from the leaderboard** will **NOT** be considered for the final ranking after this deadline.
+- **Results will be considered INVALID if:**
+  - Leaderboard results are not reproducible.
+  - Better results that are intentionally hidden.
+
+#### Private Codebase Preparation (Deadline: September 5th, 2025)
+
+- Prepare a **private** GitHub repository containing code to reproduce Phase 1 results
+- Grant access to the RoboSense official GitHub account: `robosense2025`
+- The organizater team will begin Phase 1 top-ranked result reproduction at this time
+- This step helps participants prepare for the final public codebase release
+
+#### Public Codebase Release (Deadline: September 15th, 2025)
+
+- Release the final public codebase containing:
+  - Code to reproduce Phase 1 results
+  - Code to reproduce Phase 2 results
+- This ensures competition transparency and fairness
+- The organizater team will attempt to reproduce top-ranked results
+- Submission with rule violations will not be considered for the final ranking
+- Participants are encouraged to actively review other teams' codebases and report rule violations
+    - **Note:** Reports submitted after the official award announcement will not be considered
 
 ## 📚 FAQs
 
