@@ -188,15 +188,15 @@ We use accuracy for MCQs and LLM score for open-ended questions (i.e., VQAs). Th
 
 The Phase 1 score is calculated as follows:
 
-$$
+```math
 \text{Phase1\_Score} = \frac{N_{\text{MCQ}} \times \text{Accuracy}_{\text{MCQ}} + N_{\text{VQA}} \times \text{LLMScore}_{\text{VQA}}}{N_{\text{MCQ}} + N_{\text{VQA}}}
-$$
+```
 
 where:
-- $ N_{\text{MCQ}} $ is the number of multiple-choice questions,
-- $ N_{\text{VQA}} $ is the number of open-ended questions,
-- $ \text{Accuracy}_{\text{MCQ}} $ is the accuracy on MCQs,
-- $ \text{LLMScore}_{\text{VQA}} $ is the average LLM score on open-ended questions.
+- $N_{\text{MCQ}}$ is the number of multiple-choice questions,
+- $N_{\text{VQA}}$ is the number of open-ended questions,
+- $\text{Accuracy}_{\text{MCQ}}$ is the accuracy on MCQs,
+- $\text{LLMScore}_{\text{VQA}}$ is the average LLM score on open-ended questions.
 
 ## Phase 2 Metrics
 
@@ -208,15 +208,25 @@ To ensure accurate evaluation, we still use accuracy for MCQs. But for open-ende
 
 The final score is calculated as follows:
 
-$$
-\text{Phase2\_Score} = \frac{N_{\text{MCQ}} \times \text{Accuracy}_{\text{MCQ}} + N_{\text{VQA}} \times (0.1 \times \text{ROUGE-L}_{\text{VQA}} + 0.1 \times \text{METEOR}_{\text{VQA}} + 0.8 \times \text{LLMScore}_{\text{VQA}})}{N_{\text{MCQ}} + N_{\text{VQA}}}
-$$
+```math
+\text{Phase2-Score} =
+\frac{
+  N_{\text{MCQ}} \times \text{Accuracy}_{\text{MCQ}}
+  + N_{\text{VQA}} \times \bigl(
+      0.1 \times \text{ROUGE-L}_{\text{VQA}}
+      + 0.1 \times \text{METEOR}_{\text{VQA}}
+      + 0.8 \times \text{LLMScore}_{\text{VQA}}
+    \bigr)
+}{
+  N_{\text{MCQ}} + N_{\text{VQA}}
+}
+```
 
 The final score is calculated as follows:
 
-$$
-\text{Final\_Score} = 0.2 \times \text{Phase1\_Score} + 0.8 \times \text{Phase2\_Score}
-$$
+```math
+\text{Final-Score} = 0.2 \times \text{Phase1-Score} + 0.8 \times \text{Phase2-Score}
+```
 
 ### Timeline
 
