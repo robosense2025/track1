@@ -66,20 +66,33 @@ This track uses the **RoboSense Track 1 Drive with Language Dataset**, which is 
 
 ### Dataset Statistics
 
+Phase 1:
+
 | Driving Tasks | Num. of Questions | Question Types                   |
 |:-|:-|:-|
 | **Perception** | 361 | MCQs, VQA |
 | **Prediction** | 522 | MCQs |
 | **Planning** | 513 | VQA |
 
+Phase 2:
+
+| Driving Tasks | Num. of Questions | Question Types                   |
+|:-|:-|:-|
+| **Perception** | 628 | MCQs, VQA |
+| **Prediction** | 861 | MCQs |
+| **Planning** | 860 | VQA |
+| **Corruption** | 104 | MCQs |
+
 We further distinguish the VQA questions into two types:
 - VQA<sub>obj</sub>: The question is about the object in the scene.
 - VQA<sub>scene</sub>: The question is about the general scene.
 
 
-### Baseline Performance (Phase 1)
+### Baseline Performance
 
 We use [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Instruct) as the baseline model. The baseline performance is as follows:
+
+Phase 1:
 
 | Task | Question Type | Accuracy (%) |
 |:-|:-|:-|
@@ -90,6 +103,20 @@ We use [`Qwen2.5-VL-7B-Instruct`](https://huggingface.co/Qwen/Qwen2.5-VL-7B-Inst
 | **Planning** | VQA<sub>obj</sub> | 29.6 |
 | | VQA<sub>scene</sub> | 31.2 |
 | **Average** | All Types | **42.5** |
+
+Phase 2:
+
+| Task | Question Type | Accuracy (%) |
+|:-|:-|:-|
+| **Perception** | MCQ | 78.6 |
+| | VQA<sub>obj</sub> | 21.7 |
+| | VQA<sub>scene</sub> | 19.3 |
+| **Prediction** | MCQ | 61.6 |
+| **Planning** | VQA<sub>obj</sub> | 30.8 |
+| | VQA<sub>scene</sub> | 31.3 |
+| **Corruption** | MCQ | 81.7 |
+| **Average** | All Types | **43.7** |
+
 
 ## 🚀 Quick Start
 
@@ -113,6 +140,12 @@ python convert_format.py <input_file> <output_file>
 The `input_file` can be downloaded from our [HuggingFace](https://huggingface.co/datasets/robosense/datasets/tree/main/track1-driving-with-language) page.
 
  You can also include temporal frames by adding the `--use-temporal` flag with `--num-frames <num_frames>`. The `convert_format.py` script requires the preparation of the [nuScenes](https://www.nuscenes.org/) dataset (~300GB). We will upload the subset of the nuScenes dataset in the future for convenience.
+
+For Phase 2, you need to download the corruption images from [HuggingFace](https://huggingface.co/datasets/robosense/datasets/blob/main/track1-driving-with-language/phase2_image.zip) and use the provided corrupted images instead of the original images, please specify the download root as the path to the corruption images:
+
+```bash
+python convert_format2.py <input_file> <output_file> <corruption_root>
+```
 
 ### 3. **Deploy**
 
