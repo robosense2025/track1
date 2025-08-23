@@ -272,7 +272,7 @@ All the timeline are in **Anywhere on Earth (AoE)** time.
 
 To ensure fairness and reproducibility, all participants are required to open-source their codebase and provide complete, accurate instructions for reproducing the reported results. If the submitted results cannot be reproduced, or if the codebase is incomplete or improperly prepared, the organizing team reserves the right to invalidate those results. Participants are encouraged to cross-verify the results of other teams.
 
-#### Phase 1 Results Finalization (Deadline: August 22nd, 2025)
+#### Phase 1 Results Finalization (Deadline: ~~August 22nd, 2025~~ --> Extend to September 5th, 2025)
 
 - Select and show the final and reproducible Phase 1 results to the CodaBench leaderboard
 - These results will be used for final ranking and help all participants to better plan for phase 2 based on the phase 1 results.
